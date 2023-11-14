@@ -18,6 +18,11 @@ mongoose.connect('mongodb+srv://tmcelv128:NvgCmtv4lL4Q8p1u@cluster0.phvdytd.mong
 
 // app.set('view engine', 'ejs');
 // app.set('views', './views');
+
+let corsOptions = {
+    origin: "https://frontend-react-blog.onrender.com"
+}
+
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
